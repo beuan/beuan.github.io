@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ISO-8859-1">
+<title>Natural Earth Projection Tool</title>
+<meta name="viewport" content="width = 880, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway 5 Express 5.6.6">
+<style type="text/css">
+<!-- 
+body { margin:0px; background-color:#fff; height:100% }
+html { height:100% }
+form { margin:0px }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+p:first-child { margin-top:0px }
+table { empty-cells:hide }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-x1 {  }
+.f-x2 {  }
+.f-x3 {  }
+em { font-style:italic }
+h1 { font-size:18px }
+h1:first-child { margin-top:0px }
+strong { font-weight:bold }
+.style15 { color:#000; font-family:sans-serif; font-size:18px; margin-left:0px; margin-right:0px; text-align:center }
+.style1 { color:#000 }
+.style8 { color:#386eff; text-decoration:underline }
+.style3 { font-size:21px }
+.style4 { color:#000; font-family:sans-serif; font-size:18px; margin-left:0px; margin-right:0px; text-align:left }
+.style10 { color:#000; font-family:sans-serif; font-size:18px }
+.style19 { color:#000; font-family:sans-serif; font-size:18px; margin-left:0px; margin-right:0px; text-align:left }
+.style20 { color:#000; font-family:sans-serif; font-size:18px }
+.style5 { color:#000; font-family:sans-serif; font-size:18px; margin-left:0px; margin-right:0px; text-align:left }
+.style31 { font-family:sans-serif }
+.style7 { color:#000; font-family:sans-serif; font-size:18px }
+.style100 { color:#000; font-family:sans-serif; font-size:14px }
+.style13 { font-size:200%; text-align:center }
+.style18 { color:#000; font-family:sans-serif; text-decoration:underline; font-size:18px; margin-left:0px; margin-right:0px; text-align:left }
+.style11 { font-family:sans-serif; font-size:18px; text-align:center }
+.style2 { font-family:sans-serif; font-size:18px }
+-->
+</style>
+<!--[if lt IE 7]>
+<link rel=stylesheet type="text/css" href="Tools/ie6.css">
+<![endif]-->
+<script src="Tools/FW_Object.js" type="text/javascript"></script>
+</head>
+<body link="c34500" vlink="#808080" alink="#F37321">
+<div id="PageDiv" style="position:relative; min-height:100%; margin:auto; width:880px">
+	<table border=0 cellspacing=0 cellpadding=0 width=881>
+		<colgroup>
+			<col width=40>
+			<col width=39>
+			<col width=1>
+			<col width=1>
+			<col width=1>
+			<col width=112>
+			<col width=449>
+			<col width=136>
+			<col width=1>
+			<col width=1>
+			<col width=1>
+			<col width=58>
+			<col width=40>
+			<col width=1>
+		</colgroup>
+		<tr valign=top>
+			<td height=29 colspan=13></td>
+			<td height=29></td>
+		</tr>
+		<!--
+		<tr valign=bottom>
+			<td height=130 colspan=1 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=130 colspan=12 align="right" bgcolor="#ffffff"><a href="http://cartography.oregonstate.edu/index.html"><img src="Tools/logo.png" border=0 height=100 alt="logo" style="float:left"></a></td>
+			<td height=130></td>
+		</tr>
+		-->
+		<tr valign=center>
+			<td height=100 colspan=2 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=100 colspan=6 bgcolor="#ffffff"><p class="style13 f-lp"><strong><span class="style31">Natural Earth Projection Tool for ArcMap</span></strong></p>
+			</td>
+			<td height=100 colspan=5 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=100></td>
+		</tr>
+		<tr valign=top>
+			<td height=20 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=20 colspan=6 bgcolor="#ffffff"><p class="style11 f-lp">Download <a href="Tools/NaturalEarthProjectionTool.zip">Natural Earth Projection Tool</a> <span class="style2"> (</span>17k)</p>
+			</td>
+			<td height=20 colspan=4 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+		</tr>
+		<tr valign=top>
+			<td height=21 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=21></td>
+		</tr>
+		<tr valign=top>
+			<td height=100 colspan=2 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=100 colspan=6 bgcolor="#ffffff"><p class="style19"><em>Natural Earth Projection Tool</em> is a free toolbox for ArcMap that projects shapefiles from the GCS_WGS_1984 reference system into the <a target="_top" href="http://www.shadedrelief.com/NE_proj/index.html">Natural Earth</a> or <a target="_top" href="http://www.shadedrelief.com/NE2_proj/">Natural Earth II</a> projection (see illustration bellow). The user can also define a central meridian. The tool was created by <a href="mailto:&#115;&#97;&#118;&#114;&#105;&#99;&#98;&#64;&#103;&#101;&#111;&#46;&#111;&#114;&#101;&#103;&#111;&#110;&#115;&#116;&#97;&#116;&#101;&#46;&#101;&#100;&#117;">Bojan Savric</a>, a member of the Cartography and Geovisualization Group at Oregon State University. To access data in shapefiles, the <a target="_top" href="http://code.google.com/p/pyshp/">Python Shapefile Library</a> is used. The intended users of <em>Natural Earth Projection Tool</em> are map makers working with ArcMap 10.0 or later versions on Windows.</p>
+			</td>
+		    <td height=100 colspan=5 bgcolor="#ffffff">&nbsp;</td>
+		</tr>
+		<tr valign=top>
+			<td height=15 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=15></td>
+		</tr>
+		<tr valign=top>
+			<td height=194 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td>
+			<td height=194 colspan=11 bgcolor="#ffffff" align="center"><img src="Tools/image1.png" border=0 width=775 alt="image1.png" style="float:left; border:1px solid gray;"></td>
+			<td height=194 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=194></td>
+		</tr>
+		<tr valign=top>
+			<td height=35 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=35></td>
+		</tr>
+		<tr valign=top>
+			<td height=72 colspan=2 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=72 colspan=6 bgcolor="#ffffff"><p class="style19 f-lp"><span class="style31">The list of the map projections in ArcMap does not include any of the Natural Earth projections. <em>Natural Earth Projection Tool</em> solves this problem. As shown in the illustration below, this tool projects shapefiles (points, polygons, and polylines) stored in the GCS_WGS_1984 coordinate system into one of the Natural Earth projections.</span></p>
+			</td>
+			<td height=72 colspan=5 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=72></td>
+		</tr>
+		<tr valign=top>
+			<td height=25 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=25></td>
+		</tr>
+		<tr valign=top>
+			<td height=165 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=165 colspan=11 bgcolor="#ffffff"><img src="Tools/image2.png" border=0 width=775 alt="image2" style="float:left; border:1px solid gray"></td>
+			<td height=165 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=165></td>
+		</tr>
+		<tr valign=top>
+			<td height=40 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=40></td>
+		</tr>
+		<tr valign=top>
+			<td height=41 colspan=4 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41 colspan=6 bgcolor="#ffffff"><p class="style15 f-lp"><strong><span class="style3">Installation and Use</span></strong></p>
+			</td>
+			<td height=41 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41></td>
+		</tr>
+		<tr valign=top>
+			<td height=14 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=14></td>
+		</tr>
+		<tr valign=top>
+			<td height=150 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=150 colspan=6 bgcolor="#ffffff"><p class="style4">To install<span class="style10"> </span><em>Natural Earth Projection Tool </em> <span class="style10">in</span> ArcMap 10.0 or later, on Windows, do the following:</p>
+			<p class="style4">1) Download and un-Zip the <em>Natural Earth Projection Tool</em>.
+			<p class="style4">2) Copy NaturalEarth_ArcMap10.tbx toolbox and both python scripts (shapefile.py and NaturalEarthTransformation.py) into a common folder, where you have stored your own tools and scripts for ArcMap. Note that all three files must be in the same folder.</p>
+			<p class="style4 f-lp">3) Open ArcMap and in the Catalog window establish a <a target="_top" href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//00sn00000007000000.htm" >folder connection</a> to the folder where the <em>Natural Earth Projection Tool</em> is stored.</p>
+			</td>
+			<td height=150 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=150></td>
+		</tr>
+		<tr valign=top>
+			<td height=30 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=30></td>
+		</tr>
+		<tr valign=top>
+			<td height=100 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=100 colspan=6 bgcolor="#ffffff"><p class="style4">Using the <em>Natural Earth Projection Tool</em> is simple:</span></p>
+			<p class="style4">1) Open ArcMap and in the Catalog window run the script <em>Natural Earth Projection</em>. It will open a dialog window (see below).</p>
+			</td>
+			<td height=100 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=100></td>
+		</tr>
+		<tr valign=top>
+			<td height=214 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=214 colspan=5  bgcolor="#ffffff" align="center"><img src="Tools/window.png" border=0 width=625 alt="window" style="float:center"></td>
+			<td height=214 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=214></td>
+		</tr>
+		</tr>
+		<tr valign=top>
+			<td height=10 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=10></td>
+		</tr>
+		<tr valign=top>
+			<td height=184 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=184 colspan=6 bgcolor="#ffffff"><p class="style4">2) Select a shapefile you want to project. Note that the input shapefile must be stored in the GCS_WGS_1984 reference coordinate system.</p>
+			<p class="style4">3) Define a path and name of the output shapefile. The output shapefile will not have a specified projection, since none of the Natural Earth projections exist in the ArcMap projection library.</p>
+			<p class="style4">4) Specify longitude of the central meridian. The value should be between -180 and 180 degrees.</p>
+			<p class="style4">5) From the list select the Natural Earth projection or the Natural Earth II projection. </p>
+			<p class="style4">6) At the end, confirm your choice by clicking OK. The script will start and will provide background-processing messages. </p>
+			</td>
+			<td height=184 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=184></td>
+		</tr>
+		<tr valign=top>
+			<td height=35 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=35></td>
+		</tr>
+		<tr valign=top>
+			<td height=41 colspan=4 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41 colspan=6 bgcolor="#ffffff"><p class="style15 f-lp"><strong><span class="style3"><strong><span class="style3">Notes and Use Limitations</span></strong></span></strong></p>
+			</td>
+			<td height=41 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41></td>
+		</tr>
+		<tr valign=top>
+			<td height=12 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=12></td>
+		</tr>
+		<tr valign=top>
+			<td height=210 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=210 colspan=6 bgcolor="#ffffff"><p class="style4"><span class="style10">&#8226; Both projections are supported in <a href="https://geonet.esri.com/groups/map-projections/blog/2016/02/18/new-map-projections-supported-in-arcgis-104">ArcGIS since version 10.4</a>.</span></p>
+			<p class="style4"><span class="style10">&#8226; The <em>Natural Earth Projection Tool</em> was created in ArcMap 10.0. Therefore, it can only be used in ArcMap 10.0 or later versions on Windows.</span></p>
+			<p class="style4"><span class="style10">&#8226; The <em>Natural Earth Projection Tool</em> only works for a shapefiles stored in the GSC_WGS_1984 reference coordinate system.</span></p>
+			<p class="style4">&#8226; The output shapefile does not have a specified projection since none of the Natural Earth projections exist in the ArcMap projection library.</p>
+			<p class="style4">&#8226; Units of the output shapefile are meters. This might result in an incorrect scale in the ArcMap toolbar.</p>
+			<p class="style4">&#8226; The <em>Natural Earth Projection Tool</em> creates some intermediate shapefiles in the "C:\TEMP\" folder, which are deleted at the end. This happens only when the shapefile contains polygons or polylines and the value for the central meridian differs from zero. If an error occurs, the user should manually delete the intermediate shapefiles in this folder via ArcCatalog.</p>
+			<p class="style4">&#8226; The input shapefiles should not include features without any or with only one anchor point unless there is a shapefile with a point data type. If an input shapefile contains those features, an error will occur.</p>
+			</td>
+			<td height=210 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=210></td>
+		</tr>
+		<tr valign=top>
+			<td height=35 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=35></td>
+		</tr>
+		<tr valign=top>
+			<td height=41 colspan=4 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41 colspan=6 bgcolor="#ffffff"><p class="style15 f-lp"><strong><span class="style3"><strong><span class="style3">Further Explanation of the Tool's Script Structure</span></strong></span></strong></p>
+			</td>
+			<td height=41 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41></td>
+		</tr>
+		<tr valign=top>
+			<td height=236 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=236 colspan=6 bgcolor="#ffffff" align="center"><img src="Tools/structure.png" border=0 width=525 alt="structure" style="float:center"></td>
+			<td height=236 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=236></td>
+		</tr>
+		<tr valign=top>
+			<td height=35 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=35></td>
+		</tr>
+		<tr valign=top>
+			<td height=41 colspan=4 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41 colspan=6 bgcolor="#ffffff"><p class="style15 f-lp"><strong><span class="style3"><strong><span class="style3">Acknowledgments</span></strong></span></strong></p>
+			</td>
+			<td height=41 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=41></td>
+		</tr>
+		<tr valign=top>
+			<td height=90 colspan=3 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=90 colspan=6 bgcolor="#ffffff"><p class="style4"><span class="style10">The author wishes to thank Nicholas Arnold, Bernhard Jenny, Johannes Liem, Brooke Marston, and Charles Preppernau (all Oregon State University) and Jacob Wasilkowski (Clark University) for their help, comments, and testing the tool.</span></p>
+			</td>
+			<td height=90 colspan=4 bgcolor="#ffffff">&nbsp;</td>
+			<td height=90></td>
+		</tr>
+		<tr valign=top>
+			<td height=20 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=20></td>
+		</tr>
+		<tr valign=top>
+			<td height=55 colspan=2 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=55 colspan=6 bgcolor="#ffffff"><p class="style100"><br>Corvallis, March 2013</p>
+			</td>
+			<td height=55 colspan=5 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=55></td>
+		</tr>
+		<tr valign=top>
+			<td height=13 colspan=13 bgcolor="#ffffff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=13></td>
+		</tr>
+		<tr valign=top>
+			<td height=42 colspan=4></td>
+			<td height=42 colspan=6 bgcolor="#fff"><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td height=42 colspan=3></td>
+			<td height=42></td>
+		</tr>
+		<tr class="f-sp">
+			<td><img src="Tools/_clear.gif" border=0 width=40 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=39 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=112 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=449 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=136 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=58 height=1 alt="" style="float:left"></td>
+			<td><img src="Tools/_clear.gif" border=0 width=40 height=1 alt="" style="float:left"></td>
+			<td height=1><img src="Tools/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

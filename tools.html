@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Bojan Šavrič</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--ICON-->
+		<link href="images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
+	</head>
+	<body onload="updateDate()">
+
+		<!-- Header -->
+			<header id="header">
+				<ul class="icons" style="margin-left: 1em;"><li><a href="index.html" class="icon fa-home" title="Home"></a></li></ul>
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="projections.html">Projections</a>
+							<ul>
+								<li><a href="projections.html#">Natural Earth</a></li>
+								<li><a href="projections.html#NE2p">Natural Earth II</a></li>
+								<li><a href="projections.html#Patterson">Patterson</a></li>
+								<li><a href="projections.html#EEp">Equal Earth</a></li>
+								<li><a href="projections.html#AdaptiveComposite">Adaptive Composite</a></li>
+								<li><a href="projections.html#AspectAdaptive">Aspect-Adaptive</a></li>
+								<li><a href="projections.html#Hufnagel">Hufnagel</a></li>
+							</ul>
+						</li>	
+						<li>
+							<b><a href="tools.html">Tools</a></b>
+							<ul>
+								<li><a href="tools.html#">Projection Wizard</a></li>
+								<li><a href="tools.html#Scripts">Other Scripts</a></li>
+								<li><a href="tools.html#Libraries">Code libraries</a></li>
+							</ul>
+						</li>	
+						<li>
+							<a href="doctoral.html">Research</a>
+							<ul>
+								<li><a href="doctoral.html">Doctoral</a></li>
+								<li><a href="diploma.html">Diploma</a></li>
+							</ul>
+						</li>					
+						<li>
+							<a href="publications.html">Publications</a>
+							<ul>
+								<li><a href="publications.html#">Journals</a></li>
+								<li><a href="publications.html#BookChs">Book Chs</a></li>
+								<li><a href="publications.html#Theses">Theses</a></li>
+								<li><a href="publications.html#Conferences">Conferences</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="one" class="wrapper style1">
+				<div class="container 75%">
+					<header class="special">
+						<h2>Projection Wizard</h2>
+						<p>Online Map Projection Selection Tool</p>
+					</header>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">	
+							<p><a href="https://projectionwizard.org/">Projection Wizard</a> is a web application that helps cartographers select an appropriate projection for their map. Depending on the extent and the distortion property of the map, the application proposes a projection, along with projection parameters (such as standard parallels).</p>
+							<p id="Scripts">Featured by 
+								<a href="http://www.gislounge.com/map-projection-tool/?utm_source=twitterfeed&utm_medium=twitter&utm_campaign=Feed%3A+gislounge+%28GIS+Lounge%29">GIS Lounge</a>,
+								<a href="http://googlemapsmania.blogspot.com/2015/06/the-magnificent-maps-of-week.html">Maps Mania</a> and
+								<a href="http://www.isprs-sc.org/material/isprs_sc_vol9_no4.pdf#page=7">ISPRS SC Newsetter</a>.
+							</p>							
+							<ul class="icons">
+								<li><a href="http://projectionwizard.org/" class="icon fa-cog" title="Page">&nbsp;Tool</a></li>
+								<li><a href="https://github.com/ProjectionWizard/projectionwizard.github.io" class="icon fa-github" title="Code">&nbsp;Code</a></li>
+								<li><a href="http://dx.doi.org/10.1080/00087041.2015.1131938" class="icon fa-pencil-square-o" title="Paper">Paper</a></li>
+								<li><a href="https://www.researchgate.net/publication/281067096_Projection_Wizard_Map_Projection_Selection_Tool" class="icon fa-file-powerpoint-o" title="Presentation at NACIS 2014">&nbsp;NACIS 2014</a></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<a class="image fit"><img src="images/ProjectionWizard.png" alt="Projection Wizard" /></a>
+						</div>
+						<p>
+						<i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp;2020 New functionalities where added and user interface changes where made to the tool.<br>
+						<i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;2017 <a href="http://www.cartography.org.uk/awards/past-winners/past-winners2017/">Henry Johns Best Paper Award</a> by the British Cartographic Society</p>
+						<!-- <div>
+							<blockquote>"Selecting a projection is an imperfect and imprecise science." (Fritz C. Kessler, 1991)</blockquote>
+						</div> -->
+					</div>
+					<hr />
+				
+					<header class="special">
+						<h2>Other Tools and scripts</h2>
+					</header>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">	
+							<img src="images/icon_NEtool.png"  style="height:100px;" alt="" />
+							<header>
+								<h4>Natural Earth Projection Tool for ArcMap</a></h4>
+							</header>
+							<p>A free toolbox for ArcMap that projects shapefiles to the Natural Earth or Natural Earth II projection.</p>
+							<ul class="icons">
+								<li><a href="NEPArcMap.html" class="icon fa-link" title="Page">&nbsp;Page</a></li>
+								<li><a href="Tools/NaturalEarthProjectionTool.zip" class="icon fa-cog" title="Tool">&nbsp;Tool</a></li>
+							</ul>
+							<p>Both projections are supported in <a href="https://geonet.esri.com/groups/map-projections/blog/2016/02/18/new-map-projections-supported-in-arcgis-104">ArcGIS since version 10.4</a>.</p>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<img src="images/icon_AddVertex2.png" style="height:100px;" alt="" />
+							<header>
+								<h4>Add Vertex Script for Adobe Illustrator</h4>
+							</header>
+							<p>Add Vertex adds vertices (points) to lines and area polygons based on a maximum distance spacing that the user defines.</p>
+							<a id="Libraries"></a>
+							<ul class="icons">
+								<li><a href="AddVertexScript.html" class="icon fa-link" title="Page">&nbsp;Page</a></li>
+								<li><a href="Tools/Add_Vertex.zip" class="icon fa-cog" title="Script">&nbsp;Script</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr />
+				
+					<header class="special">
+						<h2>Projection Code Libraries</h2>
+					</header>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">	
+							<header>
+								<h4>Java Map Projection Library</a></h4>
+							</header>
+							<p><a href="http://sourceforge.net/projects/jmapprojlib/">JMapProjLib</a> is a Java port of the popular <a href="http://trac.osgeo.org/proj/">PROJ.4</a> map projection library. Original port by <a href="http://www.jhlabs.com/">Jerry Huxtable</a>, now maintained by <a href="http://berniejenny.info/">Bernhard Jenny</a>.</p>
+							<ul class="icons">
+								<li><a href="http://sourceforge.net/projects/jmapprojlib/" class="icon fa-link" title="Page">&nbsp;Page</a></li>
+								<li><a href="https://github.com/OSUCartography/JMapProjLib" class="icon fa-github" title="Code">&nbsp;Code</a></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header>
+								<h4>CanvasMap</h4>
+							</header>
+							<p>CanvasMap is a JavaScript library for experimenting with map projection equations, developed by OSU Cartography and Geovisualization Group. It reads shapefiles and renders world maps with HTML5 Canvas.</p>
+							<ul class="icons">
+								<li><a href="https://github.com/OSUCartography/CanvasMap" class="icon fa-github" title="Demo code">&nbsp;Code</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row 200%" style="text-align: right;">
+					<div class="4u 12u$(medium)" style="text-align: left;">
+						Copyright &copy; Bojan Šavri&#x010D;<p id="update" style="margin: 0 0 0 0;"></p>
+					</div>
+					<div class="8u$ 12u$(medium)">
+						<ul class="icons">
+							<li><a href="mailto:BSavric@esri.com" class="icon fa-envelope-o"></a></li>
+							<li><a href="https://www.linkedin.com/in/bojan-savric/" class="icon fa-linkedin-square"></a></li>
+							<li><a href="https://twitter.com/BojanSavric" class="icon fa-twitter"></a></li>
+							<li><a href="https://scholar.google.si/citations?user=8Ldc7wIAAAAJ" class="icon"><i class="ai ai-google-scholar ai-2x"></i></a></li>
+							<li><a href="http://www.researchgate.net/profile/Bojan_Savric2" class="icon"><i class="ai ai-researchgate ai-2x"></i></a></li>
+						</ul>
+						All opinions, comments, views are my own and do not reflect opinion of my employer.
+					</div>
+				</div>					
+			</div>
+		</footer>
+
+	</body>
+</html>

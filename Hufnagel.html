@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hufnagel Projection Family</title>
+		<script src="Hufnagel/jquery-1.11.1.min.js"></script>
+		<script src="Hufnagel/jquery-ui-1.10.2.custom.min.js"></script>
+		<script src="Hufnagel/jquery.ui.touch-punch.min.js"></script>
+		
+		<script type="text/javascript" src="Hufnagel/CanvasMap.js"></script>
+		<script type="text/javascript" src="Hufnagel/UI.js"></script>
+
+		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+		<link rel="stylesheet" href="Hufnagel/jquery-ui-1.10.2.custom.min.css">
+		<link rel="stylesheet" type="text/css" href="Hufnagel/projection-selection-list.css">
+		<link rel="stylesheet" type="text/css" href="Hufnagel/projection.css">
+
+	</head>
+
+	<body>
+
+		<h1 id="title">Hufnagel Equal-Area Pseudocylindrical Map Projection Family</h1>
+		<p>
+			In 1989, Herbert Hufnagel introduced a generalization of the Mollweide projection, resulting in a family of pseudocylindrical equal-area projections. The Mollweide, Eckert &#8547; and Wagner &#8547; projections are members of this family. 
+		<br>
+			All projections are equal-area. Some parameter combinations create folding graticules.  
+		</p>
+		<p>
+			Programming by Bernhard Jenny (Oregon State University and RMIT Melbourne), Bojan &Scaron;avri&#269; (Oregon State University and Esri, Inc.) and Daniel "daan" Strebe (Mapthematics, LLC.). &copy; Dec 2014&#8211;October 2015.
+		</p>
+		
+		<div id="container">
+
+			<div class="mapControls">
+				<div>
+					A
+				</div>
+
+				<div class="sliderContainer">
+					<div id="sliderA" class="slider"></div>
+					<div id="sliderAText" class="sliderValueText"></div>
+				</div>
+
+				<div>
+					B
+				</div>
+
+				<div class="sliderContainer">
+					<div id="sliderB" class="slider"></div>
+					<div id="sliderBText" class="sliderValueText"></div>
+				</div>
+
+				<div>
+					&#936;<sub>max</sub>
+				</div>
+				<div class="sliderContainer">
+					<div id="sliderPsi" class="slider"></div>
+					<div id="sliderPsiText" class="sliderValueText"></div>
+				</div>
+
+				<div>
+					Length Ratio between Equator and Central Meridian
+				</div>
+				<div class="sliderContainer">
+					<div id="sliderAspect" class="slider"></div>
+					<div id="sliderAspectText" class="sliderValueText"></div>
+				</div>
+
+				<ol id="selectable">
+					<li id="projectionMollweide" class="ui-widget-content">
+						Mollweide
+					</li>
+					<li id="projectionEckertIV" class="ui-widget-content">
+						Eckert &#8547;
+					</li>
+					<li id="projectionEckertVI" class="ui-widget-content">
+						Eckert &#8549; (approximate)
+					</li>
+					<li id="projectionMollweideWagner" class="ui-widget-content">
+						Wagner &#8547;
+					</li>
+					<li id="projectionHufnagel2" class="ui-widget-content">
+						Hufnagel &#8545;
+					</li>
+					<li id="projectionHufnagel3" class="ui-widget-content">
+						Hufnagel &#8546;
+					</li>
+					<li id="projectionHufnagel4" class="ui-widget-content">
+						Hufnagel &#8547;
+					</li>
+					<li id="projectionHufnagel7" class="ui-widget-content">
+						Hufnagel &#8550;
+					</li>
+					<li id="projectionHufnagel9" class="ui-widget-content">
+						Hufnagel &#8552;
+					</li>
+					<li id="projectionHufnagel10" class="ui-widget-content">
+						Hufnagel &#8553;
+					</li>
+					<li id="projectionHufnagel11" class="ui-widget-content">
+						Hufnagel &#8554;
+					</li>
+					<li id="projectionHufnagel12" class="ui-widget-content">
+						Hufnagel &#8555;
+					</li>
+					<li id="projectionCylindrical" class="ui-widget-content">
+						Cylindrical Equal-Area
+					</li>
+				</ol>
+				
+				<div id="foldingWarning">
+					Graticule is folding.
+				</div>
+			</div>
+			
+			<div id="map" class="map">
+				<canvas id="mapCanvas" class="mapCanvas"></canvas>
+			</div>
+		</div>
+
+		<div>
+			<div class="source">
+				<p>
+					Source:<br>
+					Hufnagel, H. 1989.<br>
+					Ein System unecht-zylindrischer Kartennetze für Erdkarten.<br>
+					Kartographische Nachrichten, 39 (3), 89&#8211;96.<br>
+				</p>
+			</div>
+			<div class="source">
+				<p>
+					Paper:<br>
+					Jenny, B., &Scaron;avri&#269;, B. and Strebe, R. D. (2017).<br>
+					<a href="http://dx.doi.org/10.1080/15230406.2015.1128853">A computational method for the Hufnagel pseudocylindric map projection family</a>.<br>
+					Cartography and Geographic Information Science, 44 (1), 86&#8211;94.<br>
+				</p>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
